@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameStartScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/teamCompositionScene.unity
+    guid: ec315904406cf7743b846b383ef201cd
+  - enabled: 1
+    path: Assets/Scenes/StageScene.unity
+    guid: 664fea39ec5483f46a9314e5dfd9739d
+  - enabled: 1
+    path: Assets/Scenes/BattleScene.unity
+    guid: ca87a40cada16f146b1ccbd7e8749db7
   m_configObjects: {}
