@@ -1127,10 +1127,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgClips: []
-  allies: []
-  enemies: []
-  cardDeck: []
+  allies:
+  - {fileID: 7715405580857454879, guid: ae5b7b4adc7b4bd468af448b9557f110, type: 3}
+  - {fileID: 5916828542651732304, guid: 7b1bc2dedd483484fa3841ae5d9d0c21, type: 3}
+  - {fileID: 1702021362185059446, guid: b9bec21fd6bf8594891670a14bb3ead6, type: 3}
+  enemies:
+  - {fileID: 3559280089025010966, guid: 90e130bf16fa6e8419349933f29fe0d7, type: 3}
+  - {fileID: 73078698480693183, guid: 38ce45cda645b66479a2bcacb3916c22, type: 3}
+  - {fileID: 1111560960837341337, guid: 783f1e10f64a09c4494d0347effd0691, type: 3}
+  - {fileID: 1717134631983525268, guid: e754dac365648c74ca2cd2784817b63a, type: 3}
+  currentScene: GameStartScene
+  cardDeck:
+  - {fileID: 9152350543499536187, guid: 8d98fb5c177bd2145a0e8733842ad6c2, type: 3}
+  - {fileID: 4325367128541415171, guid: cc3735c5d5c62644595ea875a54ce05c, type: 3}
+  - {fileID: 1229119212999156084, guid: 2e55c79caf6fead449d07e9efc18cd96, type: 3}
   boss: {fileID: 0}
+  BattleEnd: 0
+  stageInfo: 
+  createdAllies: []
+  createdEnemies: []
 --- !u!4 &1383342396
 Transform:
   m_ObjectHideFlags: 0

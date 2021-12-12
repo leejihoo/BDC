@@ -53,26 +53,41 @@
     <UnityVersion>2020.3.21f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Btn.cs" />
+    <Compile Include="Assets\Scripts\Orc.cs" />
+    <Compile Include="Assets\Scripts\StaminaBar.cs" />
     <Compile Include="Assets\Scripts\MoveStageBtn.cs" />
-    <Compile Include="Assets\Scripts\GameStartBtn.cs" />
-    <Compile Include="Assets\Scripts\GameReStartBtn.cs" />
-    <Compile Include="Assets\Scripts\Charater.cs" />
-    <Compile Include="Assets\Scripts\Paladin.cs" />
-    <Compile Include="Assets\Scripts\Wizard.cs" />
     <Compile Include="Assets\Scripts\Archer.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\MoveBattleStage.cs" />
     <Compile Include="Assets\Scripts\Goblin.cs" />
-    <Compile Include="Assets\Scripts\Orc.cs" />
-    <Compile Include="Assets\Scripts\Ogre.cs" />
-    <Compile Include="Assets\Scripts\Boss.cs" />
     <Compile Include="Assets\Scripts\Ally.cs" />
+    <Compile Include="Assets\Scripts\GameReStartBtn.cs" />
+    <Compile Include="Assets\Scripts\Boss.cs" />
+    <Compile Include="Assets\Scripts\Charater.cs" />
+    <Compile Include="Assets\Spriter2UnityDX\Runtime\SortingOrderUpdater.cs" />
+    <Compile Include="Assets\Spriter2UnityDX\Runtime\TextureController.cs" />
+    <Compile Include="Assets\Scripts\Paladin.cs" />
+    <Compile Include="Assets\Scripts\Ogre.cs" />
     <Compile Include="Assets\Scripts\ExitBtn.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Btn.cs" />
+    <Compile Include="Assets\Spriter2UnityDX\Runtime\EntityRenderer.cs" />
+    <Compile Include="Assets\Scripts\GameStartBtn.cs" />
+    <Compile Include="Assets\Scripts\HpBar.cs" />
+    <Compile Include="Assets\Scripts\Wizard.cs" />
+    <Compile Include="Assets\Scripts\selectedCard.cs" />
+    <Compile Include="Assets\Scripts\ArcherSkill.cs" />
+    <Compile Include="Assets\Scripts\WizardSkill.cs" />
+    <Compile Include="Assets\Scripts\PaladinSkill.cs" />
+    <Compile Include="Assets\Scripts\selectedCardPaladin.cs" />
+    <Compile Include="Assets\Scripts\selectedCardWizard.cs" />
+    <Compile Include="Assets\Scripts\selectedCardArcher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cainos\Pixel Art Icon Pack - RPG\Shader\SH UI Icon Outline Color.shader" />
+    <None Include="Assets\Sprite\cardSprite\License.txt" />
     <None Include="Assets\Cainos\Pixel Art Icon Pack - RPG\Shader\SH Sprite Icon Outline Color.shader" />
+    <None Include="Assets\Sprite\cardSprite\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

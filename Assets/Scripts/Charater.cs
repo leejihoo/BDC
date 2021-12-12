@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Animations;
 public class Charater : MonoBehaviour
 {
+
+
     public enum State
     {
         IDLE,
@@ -17,57 +19,85 @@ public class Charater : MonoBehaviour
     public int currentHp;
     public int maxStamina;
     public int currentStamina;
+    [SerializeField]
     private string name;
-    private int attack;
-    private int hostility;
-    private Skill[] skills;
+    
+    public int attack;
+    [SerializeField]
+    public int hostility;
+    public List<Skill> skills;
     public State state = State.IDLE;
     [SerializeField]
-    private AudioSource stateSource;
+    protected AudioSource stateSource;
     [SerializeField]
-    private AudioClip[] stateClip;
+    protected AudioClip[] stateClip;
     [SerializeField]
-    private Animator stateAnimator;
-
-    public void AttackEnemy(GameObject _enemy)
+    protected Animator stateAnimator;
+    bool StaminaDelay = false;
+    public virtual void AttackEnemy()
     {
-
+        
     }
 
     public void Damaged(int _attack)
     {
+        if(state == State.IDLE)
+        state = State.DAMAGED;
 
+        currentHp -= _attack;
+        if(currentHp <= 0)
+        {
+            Die();
+        }
     }
 
     public void Die()
     {
-
+        state = State.DIE;
+ 
     }
 
-    public void Move()
+
+
+    public IEnumerator StaminaRecovery()
     {
+        if (!StaminaDelay)
+        {
+            
+            StaminaDelay = true;
+            yield return new WaitForSeconds(1f);
+            currentStamina += 1;
+            if (currentStamina == maxStamina)
+            {
+                currentStamina = 0;
+                state = State.ATTACK;
 
+            }
+            StaminaDelay = false;
+        }
     }
+
+
 }
 
-public class Skill
+public class Skill : MonoBehaviour
 {
-    private enum cardType
-    {
-        RECOVERY,
-        ACTIVE,
-        PASSIVE
-    }
+    //private enum cardType
+    //{
+    //    RECOVERY,
+    //    ACTIVE,
+    //    PASSIVE
+    //}
 
-    private GameObject cardTarget;
+    //private GameObject cardTarget;
 
 
-    public void SkillSet(GameObject _card)
-    {
+    //public void SkillSet(GameObject _card)
+    //{
 
-    }
+    //}
 
-    public void SkillTrigger()
+    public virtual void SkillTrigger()
     {
 
     }

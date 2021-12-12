@@ -17,6 +17,10 @@ public class Paladin : Ally
     // Update is called once per frame
     void Update()
     {
-        
+        var BattleEnd = GameManager.Instance.BattleEnd;
+        var currentScene = GameManager.Instance.currentScene;
+        if (!BattleEnd && currentScene == "BattleScene")
+            StartCoroutine(StaminaRecovery());
+        StateCheck();
     }
 }

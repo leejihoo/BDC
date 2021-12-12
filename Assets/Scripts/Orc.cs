@@ -18,6 +18,8 @@ public class Orc : Enemy
     // Update is called once per frame
     void Update()
     {
-        
+        // 스태미나가 다 채워지면 공격
+        StartCoroutine(StaminaRecovery());
+        StateCheck();
     }
 }
