@@ -299,27 +299,4 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    //private void CharacterState(GameObject _character, GameObject _enemy)
-    //{
-    //    var characterScript = _character.GetComponent<Charater>();
-          
-    //    if(characterScript.state == Charater.State.ATTACK)
-    //    {
-    //        characterScript.AttackEnemy(_enemy);
-    //        characterScript.state = Charater.State.IDLE;
-    //    }
-    //    else if(characterScript.state == Charater.State.MOVE)
-    //    {
-
-    //    }
-    //    else if(characterScript.state == Charater.State.DIE)
-    //    {
-
-    //    }
-    //    else if(characterScript.state == Charater.State.DAMAGED)
-    //    {
-
-    //    }
-        
-    //}
 }
